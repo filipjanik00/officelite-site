@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | Officelite coming soon site</title>
+    <!-- Cdn Animations -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylehseets -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="max-h-screen">
+    <!-- Header -->
+    <header id="header" class="">
+      <!-- Flex Container -->
+      <div class="container mt-12 mx-auto flex flex-col lg:mt-20">
+        <!-- Logo -->
+        <a
+          class="flex justify-center md:justify-start cursor-pointer"
+          href="./index.html"
+        >
+          <img src="./assets/shared/logo.svg" alt />
+        </a>
+      </div>
+    </header>
+
+    <main class="mt-16 md:mt-24 lg:mt-16">
+      <!-- Flex Container -->
+      <div
+        class="relative container mx-auto lg:flex lg:justify-between lg:items-center lg:gap-16"
+      >
+        <!-- Text Content and Clock-->
+        <div class="text-content">
+          <!-- Text Content -->
+          <div
+            class="text-center space-y-6 mt-10 lg:space-y-8 lg:text-left lg:mb-12"
+          >
+            <h1
+              class="text-[2.5rem] leading-[2.75rem] lg:max-w-xl lg:text-[3.5rem] lg:leading-[4rem]"
+            >
+              Work smarter. Save time.
+            </h1>
+            <p class="lg:max-w-xl lg:text-[1.125rem] md:max-w-xl mx-auto">
+              Easily manage your projects. Get on the list and receive in-app
+              perks available only to early subscribers. We are moving into
+              final development and getting ready for official launch soon.
+            </p>
+          </div>
+          <!-- Clock -->
+          <div class="mt-16">
+            <h3
+              class="uppercase text-center text-base text-darkGrey tracking-[0.3125rem] lg:text-left"
+            >
+              Coming <span class="text-blue">4 May 2024</span>
+            </h3>
+            <!-- Clock Boxes -->
+            <div
+              class="flex items-center justify-center my-4 gap-4 lg:my-0 lg:mt-4 lg:justify-start"
+            >
+              <!-- Box 1 -->
+              <div
+                class="w-[4.5rem] h-[5.75rem] flex flex-col items-center justify-center bg-lightBlueBox gap-1 rounded-[0.25rem] md:w-[6.25rem] md:h-[8rem] md:rounded-[0.8125rem] md:gap-3"
+              >
+                <h3 class="days text-blue text-[2rem] md:text-[3.5rem]">00</h3>
+                <span
+                  class="text-[0.75rem] font-semibold text-darkGrey opacity-50 md:text-base"
+                  >days</span
+                >
+              </div>
+              <!-- Box 2 -->
+              <div
+                class="w-[4.5rem] h-[5.75rem] flex flex-col items-center justify-center bg-lightBlueBox gap-1 rounded-[0.25rem] md:w-[6.25rem] md:h-[8rem] md:rounded-[0.8125rem] md:gap-3"
+              >
+                <h3 class="hours text-blue text-[2rem] md:text-[3.5rem]">00</h3>
+                <span
+                  class="text-[0.75rem] font-semibold text-darkGrey opacity-50 md:text-base"
+                  >hours</span
+                >
+              </div>
+              <!-- Box 3 -->
+              <div
+                class="w-[4.5rem] h-[5.75rem] flex flex-col items-center justify-center bg-lightBlueBox gap-1 rounded-[0.25rem] md:w-[6.25rem] md:h-[8rem] md:rounded-[0.8125rem] md:gap-3"
+              >
+                <h3 class="minutes text-blue text-[2rem] md:text-[3.5rem]">
+                  00
+                </h3>
+                <span
+                  class="text-[0.75rem] font-semibold text-darkGrey opacity-50 md:text-base"
+                  >min</span
+                >
+              </div>
+              <!-- Box 4 -->
+              <div
+                class="w-[4.5rem] h-[5.75rem] flex flex-col items-center justify-center bg-lightBlueBox gap-1 rounded-[0.25rem] md:w-[6.25rem] md:h-[8rem] md:rounded-[0.8125rem] md:gap-3"
+              >
+                <h3 class="seconds text-blue text-[2rem] md:text-[3.5rem]">
+                  00
+                </h3>
+                <span
+                  class="text-[0.75rem] font-semibold text-darkGrey opacity-50 md:text-base"
+                  >sec</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Form Section -->
+        <div
+          class="relative z-20 mt-20 -mb-[230px] md:max-w-[420px] mx-auto lg:w-full lg:mb-[0px] lg:mt-0"
+        >
+          <form
+            id="form"
+            class="p-6 bg-white text-darkGrey rounded-lg shadow-lg space-y-4 lg:p-10"
+          >
+            <!-- Form Group Control -->
+            <div class="form-control flex justify-between">
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Name"
+                class="outline-none pl-2"
+              />
+              <img src="./assets/sign-up/icon-cross.svg" class="error-icon" />
+            </div>
+            <hr />
+            <div class="form-control flex justify-between items-center">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                class="outline-none pl-2"
+              />
+              <img src="./assets/sign-up/icon-cross.svg" class="error-icon" />
+            </div>
+            <hr />
+            <div class="dropdown cursor-pointer">
+              <div class="select flex items-center justify-between">
+                <p class="selected pl-2 font-bold text-darkGrey">
+                  Basic Pack <span class="ml-1 text-lightGrey">Free</span>
+                </p>
+                <div class="caret">
+                  <img src="./assets/sign-up/icon-arrow-down.svg" alt="" />
+                </div>
+              </div>
+              <ul
+                class="menu w-[300px] lg:w-[400px] left-0 right-0 mx-auto bg-white z-30 absolute hidden list-none p-2 mt-6 rounded-lg shadow-lg border-[1px] border-solid border-lightBlueBox"
+              >
+                <div class="flex justify-between items-center">
+                  <li class="font-bold text-darkGrey p-3">
+                    Pro Pack
+                    <span class="ml-1 text-lightGrey">$9.99</span>
+                  </li>
+                  <div class="check hidden">
+                    <img
+                      src="./assets/sign-up/icon-check.svg"
+                      alt=""
+                      class="pr-8 hidden"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <li class="font-bold text-darkGrey p-3">
+                    Ultimate Pack
+                    <span class="ml-1 text-lightGrey">$19.99</span>
+                  </li>
+                  <div class="check hidden">
+                    <img
+                      src="./assets/sign-up/icon-check.svg"
+                      alt=""
+                      class="pr-8 hidden"
+                    />
+                  </div>
+                </div>
+
+                <div class="flex justify-between items-center">
+                  <li class="active font-bold text-darkGrey p-3">
+                    Basic Pack <span class="ml-1 text-lightGrey">Free</span>
+                  </li>
+                  <img
+                    src="./assets/sign-up/icon-cross.svg"
+                    class="error-icon"
+                  />
+                </div>
+              </ul>
+            </div>
+            <hr />
+            <div class="form-control flex justify-between items-center">
+              <input
+                type="text"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                class="outline-none pl-2"
+              />
+              <div class="error-icon hidden">
+                <img src="./assets/sign-up/icon-cross.svg" />
+              </div>
+            </div>
+            <hr />
+            <div class="form-control flex justify-between items-center">
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company"
+                class="outline-none pl-2"
+              />
+              <img src="./assets/sign-up/icon-cross.svg" class="error-icon" />
+            </div>
+            <hr />
+            <div class="">
+              <button
+                type="submit"
+                class="btn btn-blue w-full inline-block mt-8"
+              >
+                Get on the list
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer
+      class="bg-[url('../assets/home/bg-pattern-footer.svg')] bg-center bg-cover relative footer-inner h-[400px] bg-darkGrey lg:h-full lg:w-[250px] xl:w-[600px] lg:absolute lg:right-0 lg:top-0"
+    ></footer>
+
+    <!-- JS Scripts -->
+    <script src="./scripts/counter.js"></script>
+    <script src="./scripts/dropdown.js"></script>
+    <script src="./scripts/form-validation.js"></script>
+    <!-- <div class="mt-[150rem]"></div> -->
+  </body>
+</html>

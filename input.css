@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-main bg-[#FAFAFA] text-lightGrey text-[1rem] font-normal leading-7;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-bold text-mediumGrey;
+}
+
+.btn {
+  @apply py-4 px-10 font-bold rounded-full transition-all;
+}
+
+.btn-blue {
+  @apply bg-blue text-white;
+}
+
+.btn-blue:hover {
+  @apply bg-lightBlue;
+}
+
+.btn-light {
+  @apply bg-lighterBlue text-blue;
+}
+
+.btn-light:hover {
+  @apply bg-lightBlueHover;
+}
+
+.btn-white {
+  @apply bg-white text-blue;
+}
+
+.btn-white:hover {
+  @apply text-lightBlue;
+}
+
+.box {
+  @apply shadow-[0_3px_10px_rgb(0,0,0,0.2)];
+}
+
+.container {
+  /* border: 2px solid red; */
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+#hero {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+#cards {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+.text-content {
+  animation: slideInLeft 0.5s ease-in-out;
+}
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.check.show {
+  display: block;
+}
+
+.caret {
+  transition: transform 0.7s;
+}
+
+.caret-rotate {
+  transform: rotate(180deg);
+}
+
+.form-control {
+  position: relative;
+}
+
+.error-icon {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.menu-open {
+  display: block;
+  opacity: 1;
+}
+
+.form-control.error input::placeholder {
+  color: red;
+}
+
+hr.error {
+  border-top: 1px solid rgb(255, 0, 0);
+}
+
+.form-control.error .error-icon {
+  display: block;
+}
