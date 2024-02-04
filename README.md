@@ -23,8 +23,8 @@ This is a solution to the [Officelite coming soon site challenge on Frontend Men
 
 ### Links
 
-- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/stats-preview-card-component-4thGx7DsIJ)
-- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/stats-preview-card-component-main/)
+- Solution URL: [Frontend Mentor IO Solution](https://www.frontendmentor.io/solutions/officelite-site-using-tailwind-css--isV9TEB04)
+- Live Site URL: [Hosted on GitHub Pages](https://filipjanik00.github.io/officelite-site/)
 
 ## My process
 
